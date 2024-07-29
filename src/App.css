@@ -23,7 +23,6 @@ a {
 
 .hoverView {
   z-index: 100;
-
   border: 2px solid green;
   background-color: #00000087;
   font-weight: bolder;
@@ -374,9 +373,7 @@ a {
   align-items: center;
   appearance: none;
   background-color: var(--red);
-
   background-image: linear-gradient(1deg, var(--red), var(--green3) 99%);
-
   background-size: calc(100% + 20px) calc(100% + 20px);
   border-radius: 100px;
   border-width: 0;
@@ -429,4 +426,18 @@ a {
 
 .lrpa-p-text {
   text-align: justify;
+}
+
+
+
+
+.pointer {
+  cursor: wait;
+}
+
+.messageHeight {
+  height: 40px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
 }

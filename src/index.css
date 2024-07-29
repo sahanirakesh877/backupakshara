@@ -1,6 +1,7 @@
 /* enquiry form design start  */
 .modal-backdrop.show {
   opacity: 0.6 !important;
+  z-index:20;
 }
 .custom-modal-width {
   max-width: 800px; /* Adjust the width as needed */
