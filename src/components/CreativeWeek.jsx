@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "../css/Creative.css";
+import { fetchNotices } from "../redux/Notice/NoticeSlice";
 
 const CreativeWeek = () => {
+  const dispatch = useDispatch();
+  const { notices, loading, error } = useSelector((state) => state.notices);
+  console.log("notice image ",notices)
+  useEffect(() => {
+    dispatch(fetchNotices());
+  }, [dispatch]);
+
+  
   const brandImg = [
     "/school/banner1.jpg",
     "/school/banner2.jpg",
@@ -70,16 +81,28 @@ const CreativeWeek = () => {
               />
             </div>
 
+            {/*  important  notices  */}
+
             <div className="col-lg-6 col-md-12 mb-4">
               <h2 className="text-center border-bottom-title w-100 head-color mb-5">
                 <span className="addcolor">Important </span> Notice
               </h2>
               <div className="creative-items border">
-                <img
+                {/* <img
                   src="https://img.freepik.com/free-vector/flat-design-back-school-sales-concept_23-2148612151.jpg?t=st=1720522381~exp=1720525981~hmac=0b926379529b99d0a0f8b16688a8eb23dd8e5edf8df360bb2a1eaf7decc669af&w=826"
                   alt="Important Notice"
                   className="img-fluid"
-                />
+                /> */}
+                {loading && <p>Loading...</p>}
+                {error && <p>Error: {error}</p>}
+                {!loading && !error && notices.length > 0 && (
+                  <img
+                    // src={notices[0].images}
+                    src={`http://localhost:5000/${notices[0].images.replace(/\\/g, '/')}`}
+                    alt="Important Notice"
+                    className="img-fluid"
+                  />
+                )}
               </div>
             </div>
           </div>

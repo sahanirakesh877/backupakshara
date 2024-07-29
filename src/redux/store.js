@@ -1,5 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore } from "@reduxjs/toolkit";
+import noticeReducer from "./Notice/NoticeSlice";
+import heroPhotoReducer from "./Hero/HeroSlice";
 
 export const store = configureStore({
-  reducer: {},
-})
+  reducer: {
+    notices: noticeReducer,
+    herophoto: heroPhotoReducer,
+  },
+});
