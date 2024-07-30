@@ -1,7 +1,33 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "../css/pic.css";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchThreeDPhoto } from "../redux/ThreeDimage/ThreeDslice";
 
 const Pic = () => {
+
+
+  const dispatch = useDispatch();
+  const { threeDphoto, loading, error } = useSelector((state) => state.threeDphoto);
+  console.log('threeDphoto', threeDphoto)
+  useEffect(() => {
+    dispatch(fetchThreeDPhoto());
+  }, [dispatch]);
+
+
+
+// yo code tala haldine
+//   <div>
+//   {loading && <p>Loading...</p>}
+//   {error && <p>Error: {error}</p>}
+//   {!loading && !error && threeDphoto.length > 0 && (
+//     <div>
+//       {threeDphoto.map((photo) => (
+//         <img key={photo._id} src={photo.images} alt="3D Gallery" />
+//       ))}
+//     </div>
+//   )}
+// </div>
+
   return (
     <>
       <div className="container my-5">

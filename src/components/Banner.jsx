@@ -1,5 +1,8 @@
-import React from "react";
+import React ,{ useEffect } from "react";
 import '../css/banner.css'
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchHeroPhoto } from './../redux/Hero/HeroSlice';
+
 
 const carouselData = [
   {
@@ -32,8 +35,32 @@ const carouselData = [
 ];
 
 const Banner = () => {
+  const dispatch = useDispatch();
+  const { herophoto, loading, error } = useSelector((state) => state.herophoto);
+  console.log('herophoto', herophoto)
+  useEffect(() => {
+    dispatch(fetchHeroPhoto());
+  }, [dispatch]);
+
+
+
+//yo code paxi tala haldine
+//   <div>
+//   {loading && <p>Loading...</p>}
+//   {error && <p>Error: {error}</p>}
+//   {!loading && !error && herophoto.length > 0 && (
+//     <div>
+//       {herophoto.map((photo) => (
+//         <img key={photo._id} src={photo.url} alt="Hero" />
+//       ))}
+//     </div>
+//   )}
+// </div>
+
   return (
     <>
+
+
       <section className="home ">
         <div id="carousel" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-controls">

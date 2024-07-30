@@ -4,4 +4,4 @@ const API = axios.create({
   baseURL: "http://localhost:5000/api/v1",
 });
 
-export const getHeroPhoto = () => API.get("hero/getallheroimg");
+export const getHeroPhoto = () => API.getGallery("/three/getallthreedimg");
