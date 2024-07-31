@@ -45,7 +45,7 @@
   /* Responsiveness */
   @media (max-width: 768px) {
     .sideicon {
-      right: 15px;
+      right: 25px;
       top: 50%;
       transform: translateY(-50%);
     }
@@ -64,7 +64,7 @@
   
   @media (max-width: 576px) {
     .sideicon {
-      right: 10px;
+      right: 15px;
       top: 50%;
       transform: translateY(-50%);
     }
