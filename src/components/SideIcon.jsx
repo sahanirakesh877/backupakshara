@@ -6,7 +6,7 @@ const SideIcon = () => {
     <div className="sideicon">
       <div className="d-flex flex-column justify-content-center align-items-center gap-2">
         <div className="iconBox text-white">
-          <a href="tel:9823741079" classname="text-white text-decoration-none">
+          <a href="tel:9845892346" classname="text-white text-decoration-none">
             <i classname="fa-solid fa-phone" />
             <span>Call Us</span>
           </a>
