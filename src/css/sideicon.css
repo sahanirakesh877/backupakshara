@@ -64,7 +64,7 @@
   
   @media (max-width: 576px) {
     .sideicon {
-      right: 15px;
+      right: 25px;
       top: 50%;
       transform: translateY(-50%);
     }
