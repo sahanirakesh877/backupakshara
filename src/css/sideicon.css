@@ -1,7 +1,7 @@
 /* sideicon design start */
 .sideicon {
     position: fixed;
-    right: 5px;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1000;
@@ -25,11 +25,11 @@
     position: absolute;
     white-space: nowrap;
     background-color: rgba(0, 0, 0, 0.8);
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     padding: 5px 20px;
     border-radius: 5px;
-    top: 40%;
-    right: 130%;
+    top: 55%;
+    right: 150%;
     transform: translateX(10px) translateY(-50%);
     opacity: 0;
     visibility: hidden;
@@ -40,6 +40,45 @@
     opacity: 1;
     visibility: visible;
     transform: translateX(20px) translateY(-50%);
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .sideicon {
+      right: 10px;
+      top: 60%;
+      transform: translateY(-60%);
+    }
+  
+    .iconBox {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .iconBox span {
+      font-size: 12px;
+      padding: 5px 15px;
+      right: 130%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .sideicon {
+      right: 5px;
+      top: 65%;
+      transform: translateY(-65%);
+    }
+  
+    .iconBox {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .iconBox span {
+      font-size: 11px;
+      padding: 4px 10px;
+      right: 120%;
+    }
   }
   /* sideicon design end */
   
