@@ -46,8 +46,8 @@
   @media (max-width: 768px) {
     .sideicon {
       right: 15px;
-      top: 60%;
-      transform: translateY(-60%);
+      top: 50%;
+      transform: translateY(-50%);
     }
   
     .iconBox {
@@ -65,8 +65,8 @@
   @media (max-width: 576px) {
     .sideicon {
       right: 10px;
-      top: 65%;
-      transform: translateY(-65%);
+      top: 50%;
+      transform: translateY(-50%);
     }
   
     .iconBox {
