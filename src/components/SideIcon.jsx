@@ -1,20 +1,27 @@
 import React from "react";
+import "../css/sideicon.css";
 
 const SideIcon = () => {
   return (
     <div className="sideicon">
       <div className="d-flex flex-column justify-content-center align-items-center gap-2">
-        <div className="iconBox bg-side text-white">
-          <i className="fa-solid fa-phone"></i>
-          <span>Call Us</span>
+        <div className="iconBox text-white">
+          <a href="tel:9823741079" classname="text-white text-decoration-none">
+            <i classname="fa-solid fa-phone" />
+            <span>Call Us</span>
+          </a>
         </div>
-        <div className="iconBox bg-side text-white">
-          <i className="fa-brands fa-whatsapp"></i>
-          <span>WhatsApp</span>
+        <div className="iconBox text-white">
+        <a href="https://wa.me/9845892346" className="text-white text-decoration-none">
+            <i className="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
         </div>
-        <div className="iconBox bg-side text-white">
-          <i className="fa-regular fa-message"></i>
-          <span>Message</span>
+        <div className="iconBox text-white">
+        <a href="mailto:sahanirakesh877@gmail.com?subject=Inquiry&body=Hello,%20I%20would%20like%20to%20inquire%20about..." className="text-white text-decoration-none">
+            <i className="fa-regular fa-message"></i>
+            <span>Email Us</span>
+          </a>
         </div>
       </div>
     </div>

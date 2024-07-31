@@ -6,7 +6,10 @@ export const fetchNotices = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const response = await service.getNotice();
-      return response.data;
+      if (response.data.success) {
+
+        return response.data.notices;
+      }
     } catch (error) {
       return rejectWithValue(error.response.data);
     }

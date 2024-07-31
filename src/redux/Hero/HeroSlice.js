@@ -6,7 +6,11 @@ export const fetchHeroPhoto = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const response = await service.getHeroPhoto();
-      return response.data;
+
+      if(response.data.success){
+        return response.data;
+
+      }
     } catch (error) {
       return rejectWithValue(error.response.data);
     }

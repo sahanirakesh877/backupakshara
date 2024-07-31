@@ -9,7 +9,7 @@ import Blog from "./pages/Blog";
 import Team from "./pages/Team";
 import Home from "./pages/Home";
 import Kindegarten from "./pages/Kindergarten";
-// import SideIcon from "./components/SideIcon";
+ import SideIcon from "./components/SideIcon";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import Elementryschool from "./pages/Elementryschool";
@@ -72,7 +72,7 @@ const App = () => {
         <Route path="/photos" element={<Photos />} />
         <Route path="/photo" element={<Gallery />} />
       </Routes>
-      {/* <SideIcon /> */}
+      <SideIcon />
       {/* <ChatApp /> */}
       <Footer />
     </>

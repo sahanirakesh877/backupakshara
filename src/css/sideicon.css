@@ -1,0 +1,45 @@
+/* sideicon design start */
+.sideicon {
+    position: fixed;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
+  
+  .iconBox {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(10, 120, 83);
+    transition: all 0.3s ease;
+    box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.8);
+  }
+  
+  .iconBox span {
+    position: absolute;
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255); 
+    padding: 5px 20px;
+    border-radius: 5px;
+    top: 40%;
+    right: 130%;
+    transform: translateX(10px) translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  }
+  
+  .iconBox:hover span {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(20px) translateY(-50%);
+  }
+  /* sideicon design end */
+  

@@ -59,6 +59,8 @@ const CreativeWeek = () => {
     </div>
   ));
 
+  // console.log(`http://localhost:5000/${notices[0].images.replace(/\\/g, '/')}`)
+
   return (
     <>
       <div className="demo">
@@ -97,7 +99,7 @@ const CreativeWeek = () => {
                 {error && <p>Error: {error}</p>}
                 {!loading && !error && notices.length > 0 && (
                   <img
-                    // src={notices[0].images}
+                
                     src={`http://localhost:5000/${notices[0].images.replace(/\\/g, '/')}`}
                     alt="Important Notice"
                     className="img-fluid"
