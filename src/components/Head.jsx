@@ -6,7 +6,7 @@ import EnquiryModel from "./EnquiryModel";
 const Head = () => {
   return (
     <>
-      <header className="position-sticky top-0   ">
+      <header className=" ">
         <div className="container mx-auto ">
           <div className="row d-flex align-items-center  ">
             <nav className="navbar navbar-expand-lg navbar-light ">

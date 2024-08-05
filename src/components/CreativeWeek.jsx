@@ -1,10 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "../css/Creative.css";
 import { fetchNotices } from "../redux/Notice/NoticeSlice";
+
+
+
 
 const CreativeWeek = () => {
   const dispatch = useDispatch();
@@ -13,6 +16,15 @@ const CreativeWeek = () => {
   useEffect(() => {
     dispatch(fetchNotices());
   }, [dispatch]);
+  const shareUrls = {
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`,
+    whatsapp: `https://api.whatsapp.com/send?text=${window.location.href}`,
+    linkedin: `https://www.linkedin.com/shareArticle?url=${window.location.href}&title=Check%20out%20this%20event!`,
+    twitter: `https://twitter.com/share?url=${window.location.href}&text=Check%20out%20this%20event!`
+  };
+
+
+  const carouselRef = useRef(null);
 
   
   const brandImg = [
@@ -22,11 +34,13 @@ const CreativeWeek = () => {
     "/school/banner4.jpg",
     "/school/banner5.jpg",
   ];
+
   const responsive = {
     0: { items: 1 },
     568: { items: 1 },
     1024: { items: 1 },
   };
+
   const items = brandImg.map((img, index) => (
     <div className="creative-item card border-0 p-3 m-md-0 p-md-1" key={index}>
       <div className="img-container">
@@ -49,52 +63,72 @@ const CreativeWeek = () => {
             Share <i className="fa-solid fa-share"></i>
           </span>
           <div className="share-icon">
-            <i className="fab fa-facebook-f creative_i" />
-            <i className="fab fa-whatsapp creative_i " />
-            <i className="fab fa-instagram creative_i" />
-            <i className="fab fa-linkedin creative_i" />
-          </div>
+  <a href={shareUrls.facebook} target="_blank" rel="noopener noreferrer">
+    <i className="fab fa-facebook-f creative_i" />
+  </a>
+  <a href={shareUrls.whatsapp} target="_blank" rel="noopener noreferrer">
+    <i className="fab fa-whatsapp creative_i" />
+  </a>
+  <a href={shareUrls.linkedin} target="_blank" rel="noopener noreferrer">
+    <i className="fab fa-linkedin creative_i" />
+  </a>
+  <a href={shareUrls.twitter} target="_blank" rel="noopener noreferrer">
+    <i className="fab fa-twitter creative_i" />
+  </a>
+</div>
+
         </div>
       </div>
     </div>
   ));
 
-  // console.log(`http://localhost:5000/${notices[0].images.replace(/\\/g, '/')}`)
+
 
   return (
     <>
       <div className="demo">
         <div className="container ">
           <div className="row py-5">
+
             <div className="col-lg-6 col-md-12 mb-4">
               <h2 className="text-center border-bottom-title w-100 head-color mb-5">
                 <span className="addcolor">Creatives Of </span> This Week
               </h2>
               <AliceCarousel
+              ref={carouselRef}
                 mouseTracking
                 items={items}
-                autoPlay={true}
+                autoPlay={false}
                 infinite={true}
                 autoPlayDirection="rtl"
                 responsive={responsive}
                 controlsStrategy="alternate"
-                animationDuration={9000}
+                animationDuration={1000} 
+                disableDotsControls={true}
                 disableButtonsControls={true}
               />
+                  {/* Custom Previous Button */}
+                  <button
+                className="custom-prev-btn"
+                onClick={() => carouselRef.current?.slidePrev()}
+              >
+                {/* &#8249; */}
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+              </button>
+              {/* Custom Next Button */}
+              <button
+                className="custom-next-btn"
+                onClick={() => carouselRef.current?.slideNext()}
+              >
+               <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
             </div>
-
             {/*  important  notices  */}
-
             <div className="col-lg-6 col-md-12 mb-4">
               <h2 className="text-center border-bottom-title w-100 head-color mb-5">
                 <span className="addcolor">Important </span> Notice
               </h2>
               <div className="creative-items border">
-                {/* <img
-                  src="https://img.freepik.com/free-vector/flat-design-back-school-sales-concept_23-2148612151.jpg?t=st=1720522381~exp=1720525981~hmac=0b926379529b99d0a0f8b16688a8eb23dd8e5edf8df360bb2a1eaf7decc669af&w=826"
-                  alt="Important Notice"
-                  className="img-fluid"
-                /> */}
                 {loading && <p>Loading...</p>}
                 {error && <p>Error: {error}</p>}
                 {!loading && !error && notices.length > 0 && (
@@ -107,6 +141,8 @@ const CreativeWeek = () => {
                 )}
               </div>
             </div>
+
+            
           </div>
         </div>
       </div>
@@ -115,3 +151,6 @@ const CreativeWeek = () => {
 };
 
 export default CreativeWeek;
+
+
+

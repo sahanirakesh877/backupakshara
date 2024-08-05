@@ -22,6 +22,7 @@ import ApplyOnline from "./pages/ApplyOnline";
 import ChairmanMsg from "./components/ChairmanMsg";
 import Principalmsg from "./components/Principalmsg";
 import LRPA from "./pages/LRPA";
+import Qrcode from "./components/Qrcode";
 
 const App = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -43,7 +44,7 @@ const App = () => {
       {popupVisible && (
         <div id="popoupContainer">
           <div className="imageContainer">
-            <img src={popimg[currentImageIndex]} alt="" className="popupimg" />
+            <img src={popimg[currentImageIndex]} alt="" className="popupimg img-fluid" />
             <button className="pop_btn rounded-circle" onClick={handleClose}>
               X
             </button>
@@ -74,6 +75,7 @@ const App = () => {
       </Routes>
       <SideIcon />
       {/* <ChatApp /> */}
+      <Qrcode/>
       <Footer />
     </>
   );

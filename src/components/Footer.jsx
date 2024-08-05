@@ -301,6 +301,7 @@ const Footer = () => {
                           </ul>
                         </div>
                       </div>
+
                       <div className="col-12 col-sm-6 ">
                         <div className="widget ">
                           <h4 className="widget-title mb-4 animated-border-header">
@@ -343,7 +344,10 @@ const Footer = () => {
                               </div>
                               <div className="col-12">
                                 <div className="mb-sm-4">
-                                  <button class="head-btn  rounded-pill animated-button w-100 py-2" role="button">
+                                  <button
+                                    class="head-btn  rounded-pill animated-button w-100 py-2"
+                                    role="button"
+                                  >
                                     {" "}
                                     Subscribe
                                   </button>
@@ -356,9 +360,7 @@ const Footer = () => {
                     </div>
 
                     {/* last footer  */}
-                    <div className="row  pt-4  border-top  mt-2  border-light-subtle d-flex  align-items-center justify-content-between   ">
-
-                    
+                    {/* <div className="row  pt-4  border-top  mt-2  border-light-subtle d-flex  align-items-center justify-content-between   ">
                       <div>
                         <div className="footer-copyright-wrapper mt-6 text-light">
                           © 2024. All Rights Reserved.
@@ -377,11 +379,57 @@ const Footer = () => {
                           </span>
                         </div>
                       </div>
+                      <div className="border text-center ">
+                        <img
+                          src="/sisremove.png"
+                          alt="sister organization..."
+                          className="img-fluid"
+                        />
+                        <span>
+                          Jawlakhel, Lalitpur, Nepal
+                          <br />
+                          01-5426371
+                        </span>
+                      </div>
+                    </div> */}
 
-                     
-                  
-                     
+                    <div className="row pt-4 border-top mt-2 border-light-subtle d-flex align-items-center justify-content-between">
+                      <div className="col-md-6 col-sm-12 text-md-start text-center">
+                        <div className="footer-copyright-wrapper text-light">
+                          © 2024. All Rights Reserved.
+                        </div>
+                        <div className="credits text-light mt-2 fs-7">
+                          Built by
+                          <a
+                            href="https://technavata.com/"
+                            className="footer-tag text-decoration-none"
+                          >
+                            Navatatech
+                          </a>
+                          with
+                          <span className="text-danger">
+                            <i className="fa fa-heart" aria-hidden="true"></i>
+                          </span>
+                        </div>
+                      </div>
 
+                      <div className="col-md-6 col-sm-12 text-md-end text-center mt-sm-3 mt-md-0 bg-white rounded-5">
+                        <div className="d-flex flex-column align-items-md-end align-items-center ">
+                          <img
+                            src="/sisremove.png"
+                            alt="sister organization..."
+                            className="img-fluid mb-2"
+                            style={{ maxWidth: "250px" }}
+                          />
+                          <span className="text-light">
+                            Jawlakhel, Lalitpur, Nepal
+                            <br />
+                            01-5426371
+                          </span>
+                        </div>
+                      </div>
+
+                      
                     </div>
                   </div>
                 </div>

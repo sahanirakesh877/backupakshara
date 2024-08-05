@@ -51,7 +51,7 @@ li.dropdown:hover ul.dropdown-menu {
 
 .dropdown-menu li:hover a {
   color: white;
-  background-color: #508d4e;
+  background-color: var(--green1);
 }
 
 .dropdown-menu li {
@@ -97,7 +97,7 @@ ul.navbar-nav .nav-item:after {
   padding: 3px 20px;
   text-align: center;
   color: white;
-  background-color: #e20746;
+  background-color: #b00535;
 }
 .animated-button {
   transition: all 0.3s ease;
@@ -107,7 +107,7 @@ ul.navbar-nav .nav-item:after {
 }
 
 .animated-button:hover {
-  background-color: #7e2e63;
+  background-color: #8f0260;
   transform: scale(1.1);
 }
 
