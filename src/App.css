@@ -6,6 +6,7 @@
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
 }
+
 a {
   text-decoration: none;
 }
@@ -60,41 +61,7 @@ a {
   color: var(--red);
 }
 
-/* popup notice design start */
-/* #popoupContainer {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: 200;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.imageContainer {
-  height: 55%;
-  position: relative;
-}
-.popupimg {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.pop_btn {
-  padding: 10px 16px;
-  outline: none;
-  border: 0;
-  background-color: green;
-  color: white;
-  position: absolute;
-  top: -6%;
-  right: -5%;
-}
-.custom-chatbot .rsc-float-button {
-  margin-right: 0;
-} */
+
  /* Popup notice design start */
 #popoupContainer {
   background-color: rgba(0, 0, 0, 0.5);

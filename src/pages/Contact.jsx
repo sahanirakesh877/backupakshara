@@ -201,7 +201,7 @@ const Contact = () => {
       </div>
 
       <div className="row d-flex align-items-start">
-        <div className="col-lg-6 col-md-12 mb-4 contact-bg">
+        <div className="col-lg-6 col-md-12 mb-2 contact-bg">
           <form onSubmit={submitContactForm} ref={formRef}>
             <div className="form-group pb-2">
               <label htmlFor="name" className="pb-1 text-dark">
@@ -276,10 +276,10 @@ const Contact = () => {
           </form>
         </div>
 
-        <div className="col-lg-6 col-md-12 px-md-1 d-flex flex-column">
+        <div className="col-lg-6 col-md-12  d-flex flex-column">
           <div
-            className="map-container mb-2 flex-grow-1"
-            style={{ position: "relative", height: 0 }}
+            className="map-container  flex-grow-1"
+            style={{ position: "relative", paddingBottom: "91%" }}
           >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d56528.98843456104!2d85.29982577525458!3d27.684485455816603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39eb1a3058f08937%3A0x5e58e8a5ed6fa73b!2sM9X9%2B5C5%20Aksharaa%20School%2C%20Kageshwori%20Manohara%2044600!3m2!1d27.6973403!2d85.3670331!5e0!3m2!1sen!2snp!4v1715844547576!5m2!1sen!2snp"
@@ -289,7 +289,7 @@ const Contact = () => {
                 top: 0,
                 left: 0,
                 width: "100%",
-                height: "46.3vh",
+                height: "100%",
                 border: 0,
               }}
               allowFullScreen=""

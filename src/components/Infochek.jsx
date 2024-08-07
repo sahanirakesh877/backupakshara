@@ -9,7 +9,7 @@ const Infochek = () => {
             <h2 className="text-center border-bottom-title w-100 head-color">
               <span className="addcolor">Our Core</span> Values
             </h2>
-            <p className="px-md-5">
+            <p className="px-md-5 ">
               Aksharaa School inculates value based education with academic excellence through collaboration with parents and other stake holders to instill resilience, Leadership skills and emotional intelligence in each learner.
             </p>
           </div>

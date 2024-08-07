@@ -9,7 +9,7 @@ import Blog from "./pages/Blog";
 import Team from "./pages/Team";
 import Home from "./pages/Home";
 import Kindegarten from "./pages/Kindergarten";
- import SideIcon from "./components/SideIcon";
+import SideIcon from "./components/SideIcon";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import Elementryschool from "./pages/Elementryschool";
@@ -22,7 +22,9 @@ import ApplyOnline from "./pages/ApplyOnline";
 import ChairmanMsg from "./components/ChairmanMsg";
 import Principalmsg from "./components/Principalmsg";
 import LRPA from "./pages/LRPA";
-import Qrcode from "./components/Qrcode";
+// import ChatBoat from "./components/ChatBoat";
+// import Qrcode from "./components/Qrcode";
+import ChatApp from './components/ChatApp';
 
 const App = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -74,8 +76,9 @@ const App = () => {
         <Route path="/photo" element={<Gallery />} />
       </Routes>
       <SideIcon />
-      {/* <ChatApp /> */}
-      <Qrcode/>
+      <ChatApp />
+     {/* <ChatBoat/> */}
+      {/* <Qrcode/> */}
       <Footer />
     </>
   );

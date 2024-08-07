@@ -8,7 +8,7 @@ import Testimonial from "../components/Testimonial";
 import Banner from "../components/Banner";
 import Contact from "./Contact";
 import Counter from "../components/Counter";
-import SisterOrg from "../components/SisterOrg";
+// import SisterOrg from "../components/SisterOrg";
 import About from "./About";
 import CreativeWeek from "../components/CreativeWeek";
 import HomeBlog from "../components/HomeBlog";
@@ -35,9 +35,9 @@ const Home = () => {
       <Testimonial />
       <HomeBlog />
       <CreativeWeek />
-      <Pic />
+      {/* <Pic /> */}
       <Contact />
-      <SisterOrg />
+      {/* <SisterOrg /> */}
     </>
   );
 };

@@ -257,6 +257,8 @@ const Blog = () => {
           content="Blog, Blogus, case, blog company, team, mission, vision, services, review, values, Western Australia Care Pvt. Ltd., NDIS, disabilities, community, respect, equality"
         />
       </Helmet>
+
+      
       <div className="demo">
         <div className="container">
           <h2 className="text-center pt-5   fs-2  border-bottom-title w-100  head-color">
@@ -264,7 +266,7 @@ const Blog = () => {
             <span className="addcolor">Aksharaa</span> Highlights
           </h2>
 
-          <div className="d-flex flex-row py-4 gap-3 justify-content-center align-items-center flex-wrap">
+          <div className="d-flex flex-row pt-4 gap-2 justify-content-center align-items-center flex-wrap">
             <h6
               className={`border rounded-pill px-4 py-1 flex-wrap d-flex border-info text-center fw-semibold ${
                 filter === "Featured News" ? "text-danger" : "text-dark"

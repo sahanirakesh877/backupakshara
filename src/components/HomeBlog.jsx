@@ -40,7 +40,7 @@ const HomeBlog = () => {
         <h2 className="border-bottom-title justify-content-center my-3 head-color d-flex align-items-start">
           <span className="addcolor">Latest&nbsp;</span>Blog
         </h2>
-        <p className="text-center">
+        <p className="text-center px-md-5 ">
           Stay updated with the latest news, events, and announcements from our
           school. Our blog provides insights and highlights to keep you informed
           and engaged.
@@ -56,9 +56,11 @@ const HomeBlog = () => {
                   <span className={`tag ${item.tagClass}`}>{item.tag}</span>
                   <h6>{item.title}</h6>
                   <p>{item.description}</p>
-                  <button className="btn px-3 text-white rounded-pill blog-btn shadow-sm position-absolute end-0 bottom-0 mb-1 mx-3">
+              
+               <button className="btn px-3  text-white rounded-pill blog-btn shadow-sm position-absolute end-0 bottom-0 mb-1 mx-3">
                     Read More
                   </button>
+             
                 </div>
               </div>
             </div>

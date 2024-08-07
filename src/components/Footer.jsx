@@ -414,7 +414,7 @@ const Footer = () => {
                       </div>
 
                       <div className="col-md-6 col-sm-12 text-md-end text-center mt-sm-3 mt-md-0 bg-white rounded-5">
-                        <div className="d-flex flex-column align-items-md-end align-items-center ">
+                        <div className="d-flex flex-column align-items-md-start align-items-center ">
                           <img
                             src="/sisremove.png"
                             alt="sister organization..."

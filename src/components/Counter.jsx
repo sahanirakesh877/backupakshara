@@ -7,12 +7,12 @@ const Counter = () => {
   return (
     <>
       <div className="demo py-5 ">
-        <div className="container  count py-5">
+        <div className="container  count py-5 mx-auto">
           <div className="text-center mb-2">
             <h2 className="text-center border-bottom-title w-100 head-color">
               <span className="addcolor">Our</span> Achievement
             </h2>
-            <p className="px-md-5">
+            <p className="px-md-5 text-center px-4">
               We are proud of our milestones and the progress we've made over
               the years. Here are some key figures that showcase our success and
               growth.
