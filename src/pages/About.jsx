@@ -112,7 +112,7 @@ const About = () => {
                   <i className="fas fa-check-square me-2 text-danger" />
                   <strong>Technologically Advanced Classrooms : </strong>
                   Integration of Information Communication Technology (ICT) and
-                  Learning Management Systems (LMS) to enhance learning.
+                  Learning-Reinforcement-Practice-Application (LRPA) to enhance learning.
                 </li>
                 <li className="mb-3">
                   <i className="fas fa-check-square me-2 text-danger" />

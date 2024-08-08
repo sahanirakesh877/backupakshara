@@ -476,7 +476,7 @@ const Kindergarten = () => {
             </div>
 
             <div className="col-md-7 col-12 px-4 py-4">
-              <img src="/kinderinfo.png" alt="" className="img-fluid" />
+              <img src="/kgpng.png" alt="" className="img-fluid" />
 
               <div className="mt-5 d-flex justify-content-between">
                 <div>

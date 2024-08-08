@@ -56,42 +56,36 @@ const Elementryschool = () => {
       <div className=" py-5">
         <div className="container mx-auto ">
           <h2 className="border-bottom-title text-center w-100 fw-semibold text-success">
-            Elementary Class
+            Elementary School (Class 1-5)
           </h2>
 
           <div className="row d-flex align-items-start py-4 ">
+
+
             <div className="col-md-6 col-12 px-4">
               <p className="kinder-text">
-                Grades I–VII make up the elementary program at Aksharaa School.
-                For grades I–V, we use a grade teaching system with personalized
-                care, small class sizes, and continuous assessments. Grades VI
-                and VII have subject-specific teaching.
+                Quality education isn't just about passing exams; it encompasses
+                life skills, manners, and cultural understanding. Elementary
+                school, which includes classes from 1 to 5, is a special time in
+                child's life. Our Elementary School program is a unique approach
+                that focuses on empowering children not only academically but
+                also socially. It emphasizes personalized attention with two
+                instructors per classroom.
               </p>
               <p className="kinder-text">
-                Apart from academics, students engage in extracurricular and
-                co-curricular activities, encouraging exploration and growth.
+                By integrating reading, play, and culturally enriching
+                activities, young learners find joy in education that goes
+                beyond textbooks. Why settle for rote learning? Children deserve
+                an environment where academics intertwine with personal growth,
+                shaping them into well-rounded individuals. This approach
+                fosters critical thinking and encourages children to express
+                themselves while developing essential life skills.With a
+                commitment to nurturing both intellect and character, this
+                educational service prepares students not just for the next
+                class but for a fulfilling life ahead.
               </p>
 
-              <h6 className="kinder-head mb-md-1">Classrooms:</h6>
-              <p className="kinder-text">
-                Our spacious, well-ventilated classrooms support collaborative
-                projects, equipped with mini libraries, projectors, and internet
-                access.
-              </p>
-              <h6 className="kinder-head mb-md-1">
-                Class Assembly (Parents Day):
-              </h6>
-              <p className="kinder-text">
-                We conduct grade-wise assemblies to encourage student
-                participation and stretch comfort zones, organized around
-                classroom learning themes.
-              </p>
-              <h6 className="kinder-head mb-md-1">Grade-wise Tour:</h6>
-              <p className="kinder-text">
-                Learning extends beyond the classroom with trips around Nepal
-                and India, promoting “learning while having fun.”
-              </p>
-
+            
               {/* <div className="g pb-3">
                 <div className="gallerys p-4 ">
                   <img src="/a.jpg" alt="a big park inside a modern city" />
@@ -101,6 +95,8 @@ const Elementryschool = () => {
                 </div>
               </div>  */}
             </div>
+
+            
             <div className="col-md-6 col-12 px-4">
               {/* <div className="py-3 px-3">
                 <AliceCarousel
@@ -116,35 +112,18 @@ const Elementryschool = () => {
                 />
               </div> */}
 
-              <h6 className="kinder-head mb-md-1">
-                Laboratory and Field Trip:
-              </h6>
-              <p className="kinder-text">
-                Our hands-on, project-based learning includes science lab
-                experiments and field trips to enhance classroom lessons.
-              </p>
-              <h6 className="kinder-head mb-md-1">
-                Leadership and Community Service:
-              </h6>
-              <p className="kinder-text">
-                We develop leadership and community service skills through
-                various clubs and student bodies, encouraging active
-                participation and social responsibility.
-              </p>
-              <h6 className="kinder-head mb-md-1">
-                Social-Emotional Learning (SEL):
-              </h6>
-              <p className="kinder-text">
-                SEL classes and dedicated counselors support students' emotional
-                well-being, addressing factors like disruptive behavior and
-                bullying.
-              </p>
-              <h6 className="kinder-head mb-md-1">ECA and CCA Activities:</h6>
-              <p className="kinder-text">
-                Our ECA and CCA activities include sports, music, dance, and
-                arts, with weekend clubs for specialized training and
-                development.
-              </p>
+              <h5 className="kinder-subhead mb-md-2">
+                Beyond Academics: Enriching Experiences through Activities
+              </h5>
+              <ul className="list-unstyled">
+                <li><i className="fas fa-check-square me-2 text-danger" /> Interactive and Thematic Grade-Wise Assemblies</li>
+                <li><i className="fas fa-check-square me-2 text-danger" /> Educational and Fun-Filled Grade-Wise Tours</li>
+                <li><i className="fas fa-check-square me-2 text-danger" /> Experiential Learning through Labs and Field Trips</li>
+                <li><i className="fas fa-check-square me-2 text-danger" /> Empowering Leadership and Community Engagement</li>
+                <li><i className="fas fa-check-square me-2 text-danger" /> Comprehensive Social–Emotional Learning (SEL) Support</li>
+                <li><i className="fas fa-check-square me-2 text-danger" /> Age appropriate ECA and CCA Activities</li>
+                <li><i className="fas fa-check-square me-2 text-danger" /> Parent Involvement Workshops</li>
+              </ul>
 
               {/* <div className="g pb-3">
                 <div className="gallerys p-4 ">
