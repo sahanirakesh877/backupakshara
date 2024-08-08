@@ -340,7 +340,7 @@ const Head = () => {
                       <li>
                         <Link
                           className="dropdown-item"
-                          to="/about"
+                          to="/infrastructure"
                           onClick={closeNav}
                         >
                           Akshara Infrastructure
@@ -434,7 +434,7 @@ const Head = () => {
                           to="/academics/high"
                           onClick={closeNav}
                         >
-                          High School
+                          Senior School
                         </Link>
                       </li>
 

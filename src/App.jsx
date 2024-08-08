@@ -25,6 +25,7 @@ import LRPA from "./pages/LRPA";
 // import ChatBoat from "./components/ChatBoat";
 // import Qrcode from "./components/Qrcode";
 import ChatApp from './components/ChatApp';
+import Infrastructure from "./pages/Infrastructure";
 
 const App = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -59,6 +60,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/infrastructure" element={<Infrastructure />} />
         <Route path="/academics/kindergarten" element={<Kindegarten />} />
         <Route path="/academics/elementary" element={<Elementryschool />} />
         <Route path="/academics/middle" element={<Middleschool />} />

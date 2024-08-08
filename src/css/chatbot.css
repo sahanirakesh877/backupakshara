@@ -1,0 +1,45 @@
+
+  
+  /* Floating button positioned on the left */
+  .rsc-float-button {
+    left: 30px !important;
+    right: unset !important;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+  }
+  
+  /* Chat container alignment */
+  .rsc-container {
+    left: 10px !important;
+    right: unset !important;
+  }
+  
+  /* Media query for smaller screens (tablets and phones) */
+  @media (max-width: 768px) {
+    .rsc-float-button {
+      left: 20px !important; /* Adjust positioning on smaller screens */
+      width: 40px; /* Adjust size */
+      height: 40px; /* Adjust size */
+      bottom: 15px; /* Adjust distance from the bottom */
+    }
+  
+    .rsc-container {
+      left: 15px !important; /* Align container with button */
+    }
+  }
+  
+  /* Media query for very small screens (small phones) */
+  @media (max-width: 480px) {
+    .rsc-float-button {
+      left: 5px !important;
+      width: 30px; 
+      height: 30px; 
+      bottom: 10px; 
+    }
+  
+    .rsc-container {
+      left: 10px !important; 
+    }
+  }
+  

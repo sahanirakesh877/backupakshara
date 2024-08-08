@@ -71,26 +71,7 @@ const LRPA = () => {
             Learn Through <span className=" head-color ">LRPA Approach</span>
           </h2>
           <p className="lrpa-p-text  py-4">
-            We follow a unique model called LRPA. With the motto 'learning
-            through fun', we make learning of core theories and values in the
-            class fun filled and exciting. We believe in experiential learning.
-            Through exploration, students are allowed to experience firsthand
-            learning experiences. The classroom activities are not confined to
-            the books. Through active participation, children learn to think
-            critically over any situation, analyze rationally and draw logical
-            conclusion. All classroom activities are supported by modern
-            classroom technology and adequate resources. Students are allowed to
-            use a wide range of electronic gadgets like computers, laptops,
-            television and projectors to reinforce their subjective knowledge.
-            Students carry out several project works in each subject, use
-            various audio visual and print media, and use ample interaction with
-            concerned seniors to strengthen the learnt theory. Ample educational
-            field trips, national and international tours, talk shows are thus
-            included as essentials in our curriculum. Through experiments,
-            problem solving, model preparation, audio visual presentation,
-            drama, role play, tutorial classes, virtual learning group works,
-            conferences, they put the learnt concepts into practice and finally
-            apply them or seek their application in real life situations.
+          At Aksharaa, we believe that education is a dynamic and evolving process. To ensure that our students not only grasp knowledge but also apply it effectively, we have implemented the Learn Through LRPA (Learning, Recording, Practice, and Assessment) approach. This innovative framework integrates Continuous Assessment, Active Observation and Recording, Assignments, and Time-Bound Written Assessments to create a holistic and engaging learning environment.
           </p>
         </div>
       </div>
@@ -108,11 +89,7 @@ const LRPA = () => {
               Continuous Assessment
             </h4>
             <p className="lrpamid-p pt-4">
-              Appropriate assessment of each task is done to monitor a child's
-              skill of manipulation of words, materials, ideas, concepts. Such
-              assessments help to notice whether the child has acquired
-              language, mathematical, and social skills or not. This is done on
-              a day-to-day basis through the use of CAS book.
+           <strong> Continuous Assessment</strong> is integral to our educational strategy, allowing for ongoing evaluation of students' performance throughout their learning journey. This approach provides regular feedback and supports personalized learning by identifying areas for improvement and adapting instruction to meet individual needs. By monitoring progress continuously, we help students stay motivated and engaged, promoting a growth mindset.
             </p>
             <div className="number fs-2">1</div>
           </div>
@@ -124,7 +101,7 @@ const LRPA = () => {
             Active Observation and Recording
             </h4>
             <p className="lrpamid-p pt-4">
-            Through the intra and outside classroom activities, students' knowledge level, learning skills, extent of participation, research work, interest, psychomotor skills, etc are observed and recorded using specific criteria. Such observation helps to monitor the overall development of a child.
+           <strong> Active Observation and Recording </strong>involve educators closely monitoring students during their activities and lessons. This hands-on approach enables teachers to gain valuable insights into students' engagement, behaviors, and learning styles. Detailed records from these observations inform instructional decisions, ensuring that teaching methods are tailored to address each student's unique needs and preferences.
             </p>
             <div className="number1 fs-2">2</div>
 
@@ -151,7 +128,7 @@ const LRPA = () => {
             Assignment
             </h4>
             <p className="lrpamid-p pt-4">
-            Age appropriate specific assignments are assigned in each chapter. Written assignments, Project works and Research work are used as records on the development of specific skills related to instructional objectives or the attitude expressed or demonstrated by a student towards learning.
+            <strong>Assignments</strong> play a crucial role in applying classroom learning to real-world scenarios. They help students develop essential skills such as critical thinking, research, and independent problem-solving. By providing meaningful and practical tasks, assignments reinforce knowledge and offer opportunities for growth through feedback, fostering a deeper understanding of the subject matter.
             </p>
             <div className="number fs-2">3</div>
           </div>
@@ -163,7 +140,7 @@ const LRPA = () => {
             Time Bound Written Assessment
             </h4>
             <p className="lrpamid-p pt-4">
-            At the end of each term, time bound written test is given in each subject. This will help the student to know their writing speed and be familiar with our traditional exam system.
+            <strong>Time-Bound Written Assessments</strong> are designed to evaluate students' knowledge and problem-solving abilities under timed conditions. These assessments simulate real-world pressures and help students develop effective time management skills. They offer a comprehensive view of students' understanding and readiness for future academic and professional challenges, while also teaching valuable stress management techniques.
             </p>
             <div className="number1 fs-2">4</div>
           </div>

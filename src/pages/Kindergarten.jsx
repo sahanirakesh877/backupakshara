@@ -402,7 +402,7 @@ const Kindergarten = () => {
             Kindergarten (PG-KG)
           </h2>
           <div className="row d-flex justify-content-between align-items-start">
-            <div className="col-md-4 col-12 px-4 py-4">
+            <div className="col-md-5 col-12 px-4 py-4">
               <p className="kinder-text">
                 At Aksharaa Kindergarten, our center is dedicated to providing a
                 nurturing and educational environment for children aged 2 to 6
@@ -475,7 +475,7 @@ const Kindergarten = () => {
               </p>
             </div>
 
-            <div className="col-md-8 col-12 px-4 py-4">
+            <div className="col-md-7 col-12 px-4 py-4">
               <img src="/kinderinfo.png" alt="" className="img-fluid" />
 
               <div className="mt-5 d-flex justify-content-between">

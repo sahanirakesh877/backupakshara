@@ -98,6 +98,17 @@
 
 }
 
+.kinder-subhead {
+  font-size: 1rem;
+  font-weight: 600;
+  /* margin-top: 20px; */
+  color: rgb(145, 4, 30);
+  text-shadow: 0.2px 0.2px 0.5px rgba(12, 234, 45, 0.5);
+
+}
+
+
+
 .kinder-text {
     font-size: 0.95rem;
     line-height: 1.5;
@@ -170,7 +181,8 @@
 .g{
     display: flex;
     justify-content: center; 
-    align-items: center;   
+    align-items: center;  
+    border: 1px solid red; 
 }
 .gallerys {
     --s: 220px; 

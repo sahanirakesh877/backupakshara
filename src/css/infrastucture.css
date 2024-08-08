@@ -1,0 +1,17 @@
+.infra-icon{
+    font-size: 50px;
+}
+
+.card-texts{
+    text-align: justify;
+    font-size:14px !important;
+    color: rgb(105, 103, 103);
+}
+
+.infra-card {
+    background: linear-gradient(to top, #edf7ff, #ffffff); /* Change colors as needed */
+border:none;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

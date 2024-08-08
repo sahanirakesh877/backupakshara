@@ -1,6 +1,7 @@
 import React from "react";
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
+import "../css/chatbot.css"
 
 const ChatApp = () => {
   const theme = {
@@ -61,12 +62,12 @@ const ChatApp = () => {
 
   return (
     <ThemeProvider theme={theme}>
-     <div className="chatbot-container  "> 
+     <div className="chatbot-container"> 
         <ChatBot
           steps={steps}
           floating={true}
           headerTitle={"Welcome to Akshara School"}
-             className="custom-chatbot"
+          className="custom-chatbot"
        
         />
       </div>
